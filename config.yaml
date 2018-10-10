@@ -18,13 +18,13 @@
 #      to: /vagrant/code
 
 # Web server to run
-#webserver: apache
+webserver: apache
 
 # PHP version to use for CLI
 #php-cli: "5.6"
 
 # MySQL version to use
-#mysql: "5.5"
+mysql: "5.5"
 
 # Additional Ubuntu packages to install
 #apt-packages:
@@ -35,10 +35,10 @@
 
 # Websites to create
 sites:
-    - url: site.test
+    - url: centauri.test
       root: /vagrant
-#    - url: site70.test
-#      root: /vagrant
+    - url: wurth-old.test
+      root: /wurth
 #      php: "7.0"
 #    - url: site71.test
 #      root: /vagrant
@@ -49,9 +49,9 @@ sites:
 
 # Databases to create
 #databases:
-#    - name: devbox
-#      user: devbox
-#      password: secret
+    - name: devbox
+      user: devbox
+      password: secret
 #    - name: devbox_testing
 #      user: tester
 #      password: secret
